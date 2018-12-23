@@ -18,12 +18,3 @@ h1 {
   position: absolute;
   top: 50px;
   left: 0; }
-
-.center_marker {
-  width: 2px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  background: #fff; }

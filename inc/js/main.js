@@ -28,13 +28,13 @@
     console.log("X : " + event.pageX);
 
     if (event.pageX < 150) {
-      body.style.filter = "blur(10px)";
+      body.style.filter = "blur(20px)";
     } else if (event.pageX < 300) {
-      body.style.filter = "blur(8px)";
+      body.style.filter = "blur(15px)";
     } else if (event.pageX < 450) {
-      body.style.filter = "blur(6px)";
+      body.style.filter = "blur(10px)";
     } else if (event.pageX < 600) {
-      body.style.filter = "blur(4px)";
+      body.style.filter = "blur(5px)";
     } else if (event.pageX < 750) {
       body.style.filter = "blur(2px)";
       // } else if (event.pageX < 900) {
@@ -42,13 +42,13 @@
     } else if (event.pageX < 1150) {
       body.style.filter = "blur(2px)";
     } else if (event.pageX < 1300) {
-      body.style.filter = "blur(4px)";
+      body.style.filter = "blur(5px)";
     } else if (event.pageX < 1550) {
-      body.style.filter = "blur(6px)";
-    } else if (event.pageX < 1700) {
-      body.style.filter = "blur(8px)";
-    } else if (event.pageX < 1850) {
       body.style.filter = "blur(10px)";
+    } else if (event.pageX < 1700) {
+      body.style.filter = "blur(15px)";
+    } else if (event.pageX < 1850) {
+      body.style.filter = "blur(20px)";
     }
     if (event.pageX > 750 && event.pageX < 900) {
       body.style.filter = "blur(0px)";
