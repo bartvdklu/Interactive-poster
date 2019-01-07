@@ -1,20 +1,67 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta");
+.right_left {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  color: #fff;
+  text-transform: uppercase; }
+  .right_left img {
+    width: 12px;
+    margin-right: 5px;
+    margin-bottom: -1px; }
+  .right_left::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    bottom: -10px;
+    left: -8px;
+    background-color: #fff; }
+
+.right_top {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 2px;
+  line-height: 30px; }
+  .right_top span {
+    letter-spacing: 7px; }
+    .right_top span:first-child {
+      letter-spacing: 3px; }
+
+.left_bottom {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  line-height: 30px; }
+  .left_bottom span {
+    display: block;
+    letter-spacing: 2px;
+    font-size: 37px; }
+
 body {
   margin: 15px;
-  transition: 0.3s ease all; }
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  height: 842px;
+  width: 595px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
 
 main {
   background-image: url("../img/background.jpg");
   background-position: center;
   background-size: cover;
-  height: calc(100vh - 30px);
-  font-family: "Mukta", sans-serif; }
-
-h1 {
-  background: #222;
-  color: #fff;
-  display: inline-block;
-  padding: 5px 20px 5px 15px;
-  position: absolute;
-  top: 50px;
-  left: 0; }
+  height: 100%;
+  font-family: "Mukta", sans-serif;
+  position: relative; }
