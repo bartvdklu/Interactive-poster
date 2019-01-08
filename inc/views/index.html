@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Interactive poster - 001</title>
     <link rel="stylesheet" href="inc/css/style.css" />
+
   </head>
   <body id="body">
     <main>
@@ -25,6 +26,15 @@
         <span>001</span>
       </div>
     </main>
-    <script src="inc/js/main.js"></script>
+    <!-- <script src="./inc/js/main.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script>
+        // var values = [];
+        var socket = io();
+        socket.on('audiolevel', function(data) {
+          console.log('data received: ' + data);
+      });
+    </script>
   </body>
 </html>
