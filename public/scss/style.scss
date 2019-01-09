@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta");
 @import '_variables';
 @import '_components';
+@import '_keyframes';
 
 body {
   width: 100vw;
@@ -28,4 +29,20 @@ div#background{
   height: $body-height;
   width: $body-width;
   transition: $transition;
+}
+
+.content{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .logo{
+    margin-top: 105px;
+  }
+}
+
+.img-responsive{
+  max-width: 100%;
+  position: relative;
 }
