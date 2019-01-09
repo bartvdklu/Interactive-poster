@@ -1,13 +1,12 @@
 var app = require('express')();
+const express = require("express");
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var port = process.env.PORT || 8080;
 
 http.listen(port);
-
-app.get('/', function(req, res){
-    res.sendFile(__dirname + '/inc/views/index.html');
-});
+    
+app.use(express.static("public"));
 
 var five = require('johnny-five'); 
 var board = new five.Board();

@@ -1,6 +1,3 @@
-console.log(audiolevel);
-
-
 // (function() {
 //   document.onmousemove = handleMouseMove;
 //   function handleMouseMove(event) {
