@@ -10,8 +10,8 @@
   </head>
   <body id="body">
     <main>
-
-      <div class="right_left">
+      <div id="background"></div>
+      <div class="left_top">
           <img src="./img/icons/instagram.svg" alt="instagram icon"/>
           mike.hendriks_
       </div>
@@ -26,15 +26,8 @@
         <span>001</span>
       </div>
     </main>
-    <script src="./js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
-    <script>
-        // var values = [];
-        var socket = io();
-        socket.on('audiolevel', function(data) {
-          console.log('data received: ' + data);
-      });
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

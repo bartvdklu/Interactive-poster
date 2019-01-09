@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta");
-.right_left {
+.left_top {
   position: absolute;
   left: 40px;
   top: 40px;
   color: #fff;
   text-transform: uppercase; }
-  .right_left img {
+  .left_top img {
     width: 12px;
     margin-right: 5px;
     margin-bottom: -1px; }
-  .right_left::before {
+  .left_top::before {
     content: '';
     position: absolute;
     width: 70px;
@@ -50,18 +50,26 @@
     font-size: 37px; }
 
 body {
-  margin: 15px;
-  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  height: 842px;
-  width: 595px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative; }
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 main {
+  overflow: hidden;
+  background: #222;
+  height: 842px;
+  width: 595px;
+  font-family: "Mukta", sans-serif;
+  position: relative; }
+
+div#background {
   background-image: url("../img/background.jpg");
   background-position: center;
   background-size: cover;
-  height: 100%;
-  font-family: "Mukta", sans-serif;
-  position: relative; }
+  height: 842px;
+  width: 595px;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1); }

@@ -3,19 +3,29 @@
 @import '_components';
 
 body {
-  margin: 15px;
-  transition: $transition;
-  height: $body-height;
-  width: $body-width;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: $color-main;
 }
 main {
+  overflow: hidden;
+  background: $color-main;
+  height: $body-height;
+  width: $body-width;
+  font-family: "Mukta", sans-serif;
+  position: relative;
+}
+
+div#background{
   background-image: url("../img/background.jpg");
   background-position: center;
   background-size: cover;
-  height: 100%;
-  font-family: "Mukta", sans-serif;
-  position: relative;
+  height: $body-height;
+  width: $body-width;
+  transition: $transition;
 }

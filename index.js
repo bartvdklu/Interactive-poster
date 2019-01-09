@@ -18,6 +18,6 @@ board.on('ready',function(){
     });
 
     proximity.on("change", function() {
-        io.emit('audiolevel', this.cm);
+        io.emit('distance', this.cm);
     });
 });
