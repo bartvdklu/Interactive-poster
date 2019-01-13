@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Interactive poster - 001</title>
+    <title>Interactive poster - 002</title>
     <link rel="stylesheet" href="./css/style.css" />
 
   </head>
@@ -12,13 +12,26 @@
     <main>
       <div id="background"></div>
       <div class="content">
-        <div class="logo">
+
+        <div id="logo">
           <img src="./img/logo.png" alt="/" class="img-responsive">
         </div>
-        <!-- <canvas id="canvas" width="150" height="300"></canvas> -->
+
+        <div id="information">
+          <h1>Live dates 2019</h1>
+          <ul id="dates">
+            <li class="date">01.02 Poppodium Volt, Sittard (NET)</li>
+            <li class="date">02.02 Mezz, Breda (NET)</li>
+            <li class="date">03.02 De Piek, Vlissingen (NET)</li>
+            <li class="date">22.03 Metropool, Hengelo (NET) w/PESTILENCE</li>
+            <li class="date">23.03 Victorie, Alkmaar (NET) w/PESTILENCE</li>
+            <li class="date">24.03 Baroeg, Rotterdam (NET) w/PESTILENCE</li>
+          </ul>
+        </div>
+
       </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
     <script src="./js/main.js"></script>
   </body>

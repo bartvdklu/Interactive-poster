@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Mukta");
+@import url('https://fonts.googleapis.com/css?family=B612+Mono');
 @import '_variables';
 @import '_components';
 @import '_keyframes';
@@ -18,7 +18,7 @@ main {
   background: $color-main;
   height: $body-height;
   width: $body-width;
-  font-family: "Mukta", sans-serif;
+  font-family: 'B612 Mono', monospace;
   position: relative;
 }
 
@@ -31,14 +31,34 @@ div#background{
   transition: $transition;
 }
 
+.animate{
+  transform: $transition;
+}
+
 .content{
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
+  width: $body-width;
+  height: $body-height;
 
-  .logo{
+  #logo{
     margin-top: 105px;
+  }
+}
+
+
+#information{
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  h1{
+
+  }
+
+  ul{
+    li{}
   }
 }
 
