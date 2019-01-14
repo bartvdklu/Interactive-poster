@@ -42,23 +42,60 @@ div#background{
   left: 0;
   width: $body-width;
   height: $body-height;
+}
 
-  #logo{
-    margin-top: 105px;
+#c2a{
+  position: absolute;
+  top: $margin-from-side;
+  right: $margin-from-side;
+
+  .circle{
+    svg{
+      position: absolute;
+      left: -39px;
+      top: -38px;
+      
+      circle {
+        stroke: #fff; 
+        stroke-width: 2px;
+        stroke-opacity: 1;
+      }
+    }
+    
+    .pulse {
+      fill: white;
+      fill-opacity: 0;
+      transform-origin: 50% 50%;
+      animation-duration: 2s;
+      animation-name: pulse;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  img{
+    width: 25px;
   }
 }
 
+#logo{
+  margin-top: 105px;
+}
 
 #information{
   color: #fff;
   position: absolute;
-  bottom: 0;
+  bottom: $margin-from-side;
+  left: $margin-from-side;
   h1{
 
   }
 
   ul{
-    li{}
+    padding: 0;
+    margin: 0;
+    li{
+      list-style-type: none;
+    }
   }
 }
 

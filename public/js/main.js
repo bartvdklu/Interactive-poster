@@ -39,33 +39,23 @@ if (navigator.getUserMedia) {
         const datesLength = document.getElementById('dates').childNodes.length;
         const randomInt = Math.floor(Math.random() * datesLength);
         const dates = document.getElementById('dates').childNodes;
-
         
-        
-        if (average > 20) {
+        if (average > 80) {
           logo.className = 'earthquake';
           dates[randomInt].className = "earthquake";
-        } else if (average > 15) {
+        } else if (average > 70) {
           logo.className = 'rumble3';
           dates[randomInt].className = "rumble3";
-        } else if (average > 10) {
+        } else if (average > 60) {
           logo.className = 'rumble2';
           dates[randomInt].className = "rumble2";
-        } else if (average > 5) {
+        } else if (average > 50) {
           logo.className = 'rumble';
           dates[randomInt].className = "rumble";
         } else {
           logo.className = '';
           dates[randomInt].className = '';
-        }
-
-        // canvasContext.clearRect(0, 0, 150, 300);
-        // canvasContext.fillStyle = '#BadA55';
-        // canvasContext.fillRect(0, 300 - average, 150, 300);
-        // canvasContext.fillStyle = '#262626';
-        // canvasContext.font = "48px impact";
-        // canvasContext.fillText(Math.round(average - 40), -2, 300);
-        
+        }        
 
       } // end fn stream
     },

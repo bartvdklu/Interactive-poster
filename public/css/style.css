@@ -47,6 +47,18 @@
   100% {
     -webkit-transform: translate(1px, -5px) rotate(-1deg); } }
 
+@keyframes pulse {
+  0% {
+    stroke-width: 0px;
+    stroke-opacity: 0; }
+  20% {
+    stroke-width: 2px;
+    stroke-opacity: .6; }
+  100% {
+    stroke-width: 0;
+    stroke-opacity: 0;
+    transform: scale(2.8); } }
+
 .rumble {
   -webkit-animation-name: rumble;
   -webkit-animation-duration: 1s;
@@ -106,13 +118,42 @@ div#background {
   left: 0;
   width: 595px;
   height: 842px; }
-  .content #logo {
-    margin-top: 105px; }
+
+#c2a {
+  position: absolute;
+  top: 40px;
+  right: 40px; }
+  #c2a .circle svg {
+    position: absolute;
+    left: -39px;
+    top: -38px; }
+    #c2a .circle svg circle {
+      stroke: #fff;
+      stroke-width: 2px;
+      stroke-opacity: 1; }
+  #c2a .circle .pulse {
+    fill: white;
+    fill-opacity: 0;
+    transform-origin: 50% 50%;
+    animation-duration: 2s;
+    animation-name: pulse;
+    animation-iteration-count: infinite; }
+  #c2a img {
+    width: 25px; }
+
+#logo {
+  margin-top: 105px; }
 
 #information {
   color: #fff;
   position: absolute;
-  bottom: 0; }
+  bottom: 40px;
+  left: 40px; }
+  #information ul {
+    padding: 0;
+    margin: 0; }
+    #information ul li {
+      list-style-type: none; }
 
 .img-responsive {
   max-width: 100%;
